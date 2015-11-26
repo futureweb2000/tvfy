@@ -17,6 +17,8 @@ body{
 	position: fixed;
 	background: #2ecc71;
 	text-align: center;
+  z-index: 10;
+  
 }
 
 
@@ -42,7 +44,8 @@ body{
 }
 #app-body .search-form input[type="text"]{
 
-	padding:7px 15px;
+	padding:7px 15px 7px 0;
+  width:300px;
 	border-radius: 6px;
 }
 
@@ -70,6 +73,7 @@ body{
 	padding:16px;
 	margin-bottom: 16px;
 	background: white;
+  position: relative;
 }
 .tv-show:hover{
 
@@ -83,6 +87,13 @@ body{
 
 }
 
+.tv-show button.like{
+
+  position: absolute;
+  top:10px;
+  right: 10px;
+}
+
 .tv-show .info{
 	width:70%;
 	margin-left: 20px;
@@ -92,7 +103,11 @@ body{
 	float: left;
 }
 
+.tv-show.liked{
 
+  background: pink;
+  transition:.5s;
+}
 
 
 .loader,
