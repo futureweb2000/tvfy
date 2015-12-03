@@ -1,4 +1,6 @@
 
+var $ = require('jquery');
+
 
 $(document).ready(function(){
 
@@ -11,7 +13,7 @@ $(document).ready(function(){
 			ev.preventDefault();
 			var $this = $(this);
 
-			$this.closest('.tv-show').toggleClass('liked')
+			$this.closest('.tv-show').toggleClass('liked');
 
 			$this = $(this); // contexto de este button
 
@@ -94,15 +96,6 @@ $(document).ready(function(){
 	}
 
 	
-	
-
-
-
-
-
-
-
-
 
 
 

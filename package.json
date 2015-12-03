@@ -1,0 +1,19 @@
+{
+  "name": "tvfy",
+  "version": "0.1.0",
+  "description": "Esta es una app para buscar shows de tv",
+  "main": "index.js",
+  "scripts": {
+    "build-js": "browserify index.js > app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/futureweb2000/tvfy.git"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1"
+  }
+}
